@@ -1,0 +1,18 @@
+import React from "react"
+import { use Params } from "react-router-dom"
+import productsData from ................"./       Data"
+
+function ProductDetail() {
+    const {ProductID} = useParams()
+    const thisProduct = productData.find(prod => prod.id === productID)
+}
+
+    return (
+      <div>
+        <h1>{thisProduct.name}</h1>
+        <p>Price: $(this.Product.price)</p>
+        <p>{thisProduct.description}</p>
+      </div>
+ )
+ 
+export default ProductDetail
